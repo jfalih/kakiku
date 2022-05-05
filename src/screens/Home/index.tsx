@@ -193,46 +193,24 @@ const Home = () => {
           }} horizontal data={[1,2,3,4]} renderItem={
             () => (
               <View style={{
-                marginRight:20,
-                padding:10,
-                borderRadius:10,
-                borderColor: Color.neutral.two,
-                borderWidth:1,
+                marginRight:30,
+                width:120
               }}>
                 <Image style={{
-                  width:140,
+                  width:120,
                   marginBottom:10,
-                  height:100,
+                  height:120,
                   borderRadius:10
                 }} source={{
-                  uri: 'https://images.unsplash.com/photo-1506976785307-8732e854ad03?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZWdnJTIwY2FydG9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60'
+                  uri: 'https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full/tropical_tropical-2l-minyak-goreng--2-pouch-_full02.jpg'
                 }}/>
-                <Text type='body' style={{
-                  marginBottom:10
-                }}>Telur ayam 1kg</Text>
-                <View style={{
-                  justifyContent:'space-between',
-                  flexDirection:'row',
-                  alignItems:'center'
-                }}>
-                <View>
-                  <Text style={{
-                    marginBottom:2,
-                  }} type='label' weight='bold'>Harga</Text>
-                  <Text>Rp100.000</Text>
-                </View>
-                <Buttons 
-                  type='ButtonHelper' 
-                  style={{
-                    width:40,
-                    height:40,
-                    borderRadius:20
-                  }}
-                  icon='add-line'
-                  iconColor={Color.neutral.one}
-                  color={Color.primary.three}
-                />
-                </View>
+                <Text type='label' textProps={{
+                  numberOfLines:2
+                }} style={{
+                  marginBottom:5,
+                  flex:1,
+                }}>Minyak Goreng Tropical 2 Liter kl ipsum</Text>
+                <Text type='label' weight='bold'>Rp100.000</Text>
               </View>
             )
           }>

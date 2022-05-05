@@ -37,7 +37,7 @@ export namespace ColorsType {
         neutral: {
             one: '#ffffff',
             two: '#eeeeee',
-            three: '#cccccc',
+            three: '#888888',
             four: '#222222',
             five: '#000000'
         },
@@ -48,9 +48,9 @@ export namespace ColorsType {
     };
     export const dark = {
         primary: {
-            one: '',
-            two: '#555555',
-            three: '#333333',
+            one: '#E8F7FF',
+            two: '#5EB1FF',
+            three: '#0085FF',
             four: '',
             five: ''
         },
@@ -78,7 +78,7 @@ export namespace ColorsType {
         neutral: {
             one: '#000000',
             two: '#222222',
-            three: '#cccccc',
+            three: '#888888',
             four: '#eeeeee',
             five: '#ffffff'
         },

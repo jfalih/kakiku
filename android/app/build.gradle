@@ -224,6 +224,12 @@ android {
         }
     }
     signingConfigs {
+         release {
+            storeFile file('kakikuRelease.keystore')
+            storePassword 'jan12345'
+            keyAlias 'kakikuRelease'
+            keyPassword 'jan12345'
+        }
         debug {
             storeFile file('debug.keystore')
             storePassword 'android'
@@ -241,6 +247,7 @@ android {
             signingConfig signingConfigs.debug
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+            signingConfig signingConfigs.release
         }
     }
 
